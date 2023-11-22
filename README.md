@@ -1,4 +1,19 @@
-# github_oidc_ecr
+# Register GitHub OIDC and Grant Access to Amazon ECR
+
+## Usage:
+```hcl
+module "github_to_ecr" {
+  
+    source = "github.com/shamimice03/terraform-aws-github-oidc-ecr"
+
+    iam_role_name        = "github-actions-to-ecr"
+    iam_role_description = "IAM role to access ecr from github actions using OIDC"
+    github_repo_name     = "shamimice03/thumbnail-api-app"
+    allowed_branches     = ["main", "dev"]
+    ecr_region           = "ap-northeast-1"
+    ecr_repo_names       = ["thumbnail-api", "thumbnail-task"]
+}
+```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
