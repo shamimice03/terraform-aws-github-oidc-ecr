@@ -52,12 +52,12 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_allowed_branches"></a> [allowed\_branches](#input\_allowed\_branches) | Allowed github branches | `list(any)` | <pre>[<br>  "dev",<br>  "main"<br>]</pre> | no |
-| <a name="input_ecr_region"></a> [ecr\_region](#input\_ecr\_region) | ECR region | `string` | `"ap-northeast-1"` | no |
-| <a name="input_ecr_repo_names"></a> [ecr\_repo\_names](#input\_ecr\_repo\_names) | Name of the ECR repository | `list(any)` | <pre>[<br>  "thumbnail-api",<br>  "thumbnail-task"<br>]</pre> | no |
-| <a name="input_github_repo_name"></a> [github\_repo\_name](#input\_github\_repo\_name) | Name of the Github Repo | `string` | `"shamimice03/thumbnail-api-app"` | no |
-| <a name="input_iam_role_description"></a> [iam\_role\_description](#input\_iam\_role\_description) | IAM Role to access ECR repo from GitHub Actions | `string` | `"IAM Role to access ECR repo from GitHub Actions"` | no |
-| <a name="input_iam_role_name"></a> [iam\_role\_name](#input\_iam\_role\_name) | Name of the IAM role for GitHub Actions | `string` | `"github-actions-to-ecr"` | no |
+| <a name="input_allowed_branches"></a> [allowed\_branches](#input\_allowed\_branches) | Allowed github branches | `list(any)` | `[]` | no |
+| <a name="input_ecr_region"></a> [ecr\_region](#input\_ecr\_region) | ECR region | `string` | `""` | no |
+| <a name="input_ecr_repo_names"></a> [ecr\_repo\_names](#input\_ecr\_repo\_names) | Name of the ECR repository | `list(any)` | `[]` | no |
+| <a name="input_github_repo_name"></a> [github\_repo\_name](#input\_github\_repo\_name) | Name of the Github Repo | `string` | `""` | no |
+| <a name="input_iam_role_description"></a> [iam\_role\_description](#input\_iam\_role\_description) | IAM Role to access ECR repo from GitHub Actions | `string` | `""` | no |
+| <a name="input_iam_role_name"></a> [iam\_role\_name](#input\_iam\_role\_name) | Name of the IAM role for GitHub Actions | `string` | `""` | no |
 
 ## Outputs
 
