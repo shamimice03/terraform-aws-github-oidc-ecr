@@ -3,7 +3,7 @@
 ## Usage:
 ```hcl
 module "github_to_ecr" {
-  
+
     source = "github.com/shamimice03/terraform-aws-github-oidc-ecr"
 
     iam_role_name        = "github-actions-to-ecr"
